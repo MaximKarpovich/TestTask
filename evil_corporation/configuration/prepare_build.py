@@ -18,6 +18,6 @@ Executor.run(['conan', 'install', '-g', 'cmake_multi', guide.root_dir , '--profi
 Executor.run(['conan', 'install', '-g', 'cmake_multi', guide.root_dir , '--profile', '../conan_profile', '--build=outdated', '-s', 'build_type=Release'])
 Executor.run(['cmake', guide.root_dir, '-G', ide])
 
-#guide.cd()
-#Executor.run(['cmake', '--build', '.', '--config', 'Release', '--', '/m:8', '/p:BuildInParallel=true'])
+guide.cd()
+Executor.run(['cmake', '--build', '.', '--config', 'Release', '--', '/m:8', '/p:BuildInParallel=true'])
         
