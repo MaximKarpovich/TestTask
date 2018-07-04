@@ -42,7 +42,6 @@ void Client::start_mining() {
 			{
 				boost::lock_guard<boost::mutex> lock(this->mining_mutex_);
 
-				std::cout << "Client (id = " << this->get_subscriver_id() << "mined fee." << std::endl;
 				this->money_ += generatedBRC;
 			}
 		}
